@@ -45,7 +45,6 @@ body{
       }
 }
 .what {
-
       &__body {
             display: flex;
             padding: 50px;
@@ -60,14 +59,9 @@ body{
             margin: 0px 0px 0px 50px;
       }
 
-      &__tittle {
-            font-size: 30px;
-            color: #445161;
-
-      }
-
       &__text {
       }
+
       &__text p {
             font-size: 16px;
             margin: 20px 0px 0px 0px;
@@ -76,3 +70,50 @@ body{
             color: #333333;
       }
 }
+
+.tittle {
+      font-size: 30px;
+      color: #445161;
+}
+
+.column {
+      background: #f5f5f5;
+
+      &__body {
+            padding: 50px;
+      }
+
+
+      &__tittle {
+            text-align: center;
+      }
+
+      &__group {
+            display: flex;
+      }
+
+      &__block1 {
+      }
+
+      &__img {
+      }
+
+      &__textblock {
+      }
+
+      &__subtittle {
+      }
+
+      &__text {
+      }
+
+      &__block2 {
+      }
+
+      &__block3 {
+      }
+
+      &__block4 {
+      }
+}
+
