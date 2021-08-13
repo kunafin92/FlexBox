@@ -73,19 +73,60 @@ body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
-.container {
-  margin: 50px 50px 50px 50px;
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: #445162;
+  padding: 50px;
 }
 
-.header {
-  background: #445162;
+.header__body {
+  color: #fff;
+  letter-spacing: 2px;
 }
 
 .header__title {
   font-size: 60px;
 }
 
-.header__link {
+.header__list {
+  margin: 40px 0px 0px 0px;
+}
+
+.header__link li {
   font-size: 20px;
-  background: url(../img/icons/icon.png);
+  background: url(../img/icons/icon.png) no-repeat;
+  padding: 0px 0px 0px 30px;
+  margin: 20px 0px 0px 0px;
+}
+
+.header__cartoon {
+  max-width: 470px;
+}
+
+.what__body {
+  display: flex;
+  padding: 50px;
+}
+
+.what__img {
+  flex: 0 0 auto;
+}
+
+.what__textblock {
+  flex: 1 1 50%;
+  margin: 0px 0px 0px 50px;
+}
+
+.what__tittle {
+  font-size: 30px;
+  color: #445161;
+}
+
+.what__text p {
+  font-size: 16px;
+  margin: 20px 0px 0px 0px;
+  line-height: 20px;
+  text-align: left;
+  color: #333333;
 }

@@ -9,13 +9,18 @@ body{
 }
 
 .container{
-      margin: 50px 50px 50px 50px;
 }
 
 .header {
+      display: flex;
+      justify-content: space-between;
       background: #445162;
+      padding: 50px;
+
 
       &__body {
+            color: #fff;
+            letter-spacing: 2px;
       }
 
       &__title {
@@ -23,13 +28,51 @@ body{
       }
 
       &__list {
+            margin: 40px 0px 0px 0px;
       }
 
-      &__link {
+      &__link li{
             font-size: 20px;
-            background: url(../img/icons/icon.png);
+            background: url(../img/icons/icon.png) no-repeat;
+            padding: 0px 0px 0px 30px;
+            margin: 20px 0px 0px 0px;
       }
 
       &__img {
+      }
+      &__cartoon {
+            max-width: 470px;
+      }
+}
+.what {
+
+      &__body {
+            display: flex;
+            padding: 50px;
+      }
+
+      &__img {
+            flex: 0 0 auto;
+      }
+
+      &__textblock {
+            flex: 1 1 50%;
+            margin: 0px 0px 0px 50px;
+      }
+
+      &__tittle {
+            font-size: 30px;
+            color: #445161;
+
+      }
+
+      &__text {
+      }
+      &__text p {
+            font-size: 16px;
+            margin: 20px 0px 0px 0px;
+            line-height: 20px;
+            text-align: left;
+            color: #333333;
       }
 }
