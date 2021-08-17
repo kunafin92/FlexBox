@@ -2,74 +2,154 @@
 <!DOCTYPE html>
 <!-- Оболочка документа, указываем язык содержимого -->
 <html lang="ru">
-	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
-	<head>
-		<!-- Заголовок страницы в браузере -->
-		<title>FLEXBOX</title>
-		<!-- Адаптив -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-		<!-- Подключаем CSS -->
-		<link rel="stylesheet" href="css/style.css" />
-		<!-- Кодировка страницы -->
-		<meta charset="UTF-8">
-	</head>
-	<!-- Отображаемое тело страницы -->
-	<body>
-		<div class="about">
-			<div class="container">
-				<div class="header">
-					<div class="header__body">
-						<div class="header__title">Привет, друг!</div>
-						<div class="header__list">
-							<ul class="header__link">
-								<li>У тебя все получится!</li>
-								<li>Никогда не сдавайся!</li>
-								<li>Сегодня ты уже знаешь больше чем вчера!</li>
-								<li>Спасибо тебе за поддержку!</li>
-							</ul>
-						</div>
-					</div>
-					<div class="header__img">
-						<img class="header__cartoon" src="img/image.jpg" alt="">
+<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+
+<head>
+	<!-- Заголовок страницы в браузере -->
+	<title>FLEXBOX</title>
+	<!-- Адаптив -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<!-- Подключаем CSS -->
+	<link rel="stylesheet" href="css/style.css" />
+	<!-- Кодировка страницы -->
+	<meta charset="UTF-8">
+</head>
+<!-- Отображаемое тело страницы -->
+
+<body>
+	<div class="about">
+		<div class="container">
+			<div class="header">
+				<div class="header__body">
+					<div class="header__title">Привет, друг!</div>
+					<div class="header__list">
+						<ul class="header__link">
+							<li>У тебя все получится!</li>
+							<li>Никогда не сдавайся!</li>
+							<li>Сегодня ты уже знаешь больше чем вчера!</li>
+							<li>Спасибо тебе за поддержку!</li>
+						</ul>
 					</div>
 				</div>
-				<div class="what">
-					<div class="what__body">
-						<div class="what__img">
-							<img src="img/image_2.jpg" alt="">
+				<div class="header__img">
+					<img class="header__cartoon" src="img/image.jpg" alt="">
+				</div>
+			</div>
+			<div class="what">
+				<div class="what__body">
+					<div class="what__img">
+						<img src="img/image_2.jpg" alt="">
+					</div>
+					<div class="what__textblock">
+						<div class="what__tittle tittle">Что такое FlexBox?</div>
+						<div class="what__text">
+							<p>Flexbox - это целый модуль, содержащий в себе набор свойств и их значений как для
+								родителя flex-контейнера так и для его дочерних элементов flex-элементов.
+							</p>
+							<p>Основным преимуществом гибкой FLEX разметки является возможность изменять ширину/высоту
+								пространство вокруг и порядок flex-элементов, для того чтобы наилучшим образом заполнить
+								доступное пространство flex-контейнера</p>
 						</div>
-						<div class="what__textblock">
-							<div class="what__tittle tittle">Что такое FlexBox?</div>
-							<div class="what__text">
-								<p>Flexbox - это целый модуль, содержащий в себе набор свойств и их значений как для родителя flex-контейнера так и для его дочерних элементов flex-элементов. 
-								</p>
-								<p>Основным преимуществом гибкой FLEX разметки является возможность изменять ширину/высоту пространство вокруг и порядок flex-элементов, для того чтобы наилучшим образом заполнить доступное пространство flex-контейнера</p>
+					</div>
+				</div>
+			</div>
+			<div class="column">
+				<div class="column__body">
+					<div class="column__tittle tittle">
+						Колонки с flex-контейнерами
+					</div>
+					<div class="column__group">
+						<div class="column__block1">
+							<div class="column__img">
+								<img class="column__cartoon" src="img/image_3.jpg" alt="">
+							</div>
+							<div class="column__textblock">
+								<div class="column__subtittle">The description for the image</div>
+								<div class="column__text">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque
+									itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam
+									animi dolores. Sequi itaque, unde perferendis nemo debitis dolor. lorem</div>
+							</div>
+						</div>
+						<div class="column__block2">
+							<div class="column__img">
+								<img class="column__cartoon" src="img/image_3.jpg" alt="">
+							</div>
+							<div class="column__textblock">
+								<div class="column__subtittle">The description for the image</div>
+								<div class="column__text">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque
+									itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam
+									animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</div>
+							</div>
+						</div>
+						<div class="column__block3">
+							<div class="column__img">
+								<img class="column__cartoon" src="img/image_3.jpg" alt="">
+							</div>
+							<div class="column__textblock">
+								<div class="column__subtittle">The description for the image</div>
+								<div class="column__text">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque
+									itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam
+									animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</div>
+							</div>
+						</div>
+						<div class="column__block4">
+							<div class="column__img">
+								<img class="column__cartoon" src="img/image_3.jpg" alt="">
+							</div>
+							<div class="column__textblock">
+								<div class="column__subtittle">The description for the image</div>
+								<div class="column__text">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque
+									itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam
+									animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="column">
-					<div class="column__body">
-						<div class="column__tittle tittle">
-							Колонки с flex-контейнерами
+			</div>
+			<div class="vertikal">
+				<div class="vertikal__tittle tittle">Вертикальное выравнивание</div>
+				<div class="vertikal__columnAbout">
+					<div class="vertikal__column1">
+						<div class="vertikal__name">буду рад</div>
+						<div class="vertikal__subtittle">подписке</div>
+						<div class="vertikal__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
+							nesciunt consectetur alias fugiat qui praesentium dolorem enim accusamus eos! Corrupti, hic
+							quisquam quis obcaecati autem facilis nobis minima aliquam corporis.</div>
+						<div class="vertikal__button">
+							<a class="vertikal__push" target="_blank" href="#">подписаться</a>
 						</div>
-						<div class="column__group">
-							<div class="column__block1">
-								<div class="column__img">
-									<img src="img/image_3.jpg" alt="">
-								</div>
-								<div class="column__textblock">
-									<div class="column__subtittle">The description for the image</div>
-									<div class="column__text">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</div>
-								</div>
-							</div>
-							<div class="column__block2"></div>
-							<div class="column__block3"></div>
-							<div class="column__block4"></div>
+					</div>
+					<div class="vertikal__column2 ">
+						<div class="vertikal__name">буду рад</div>
+						<div class="vertikal__subtittle">лайку</div>
+						<div class="vertikal__text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
+								nesciunt consectetur alias fugiat qui praesentium dolorem enim accusamus eos! Corrupti,
+								hic quisquam quis obcaecati autem facilis nobis minima aliquam corporis.
+							</p>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla illo alias aut doloribus
+								magni necessitatibus, veniam praesentium sint fugit dolores, eaque corporis perspiciatis
+								aspernatur repellat rerum quidem reprehenderit fugiat velit!
+							</p>
+						</div>
+						<div class="vertikal__button">
+							<a class="vertikal__push" target="_blank" href="#">лайк</a>
+						</div>
+					</div>
+					<div class="vertikal__column3">
+						<div class="vertikal__name">буду рад</div>
+						<div class="vertikal__subtittle">комментарию</div>
+						<div class="vertikal__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
+							nesciunt consectetur alias fugiat qui praesentium dolorem enim accusamus eos! Corrupti, hic
+							quisquam quis obcaecati autem facilis nobis minima aliquam corporis.</div>
+						<div class="vertikal__button">
+							<a class="vertikal__push" target="_blank" href="#">комментировать</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</body>
+	</div>
+</body>
+
 </html>

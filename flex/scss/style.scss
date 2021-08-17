@@ -4,11 +4,13 @@
 //Файл обнуляющих стилей
 @import "_nullstyle";
 
-body{
+body {
       font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
-.container{
+.container {
+      width: 1180px;
+      margin: 0 auto;
 }
 
 .header {
@@ -16,7 +18,6 @@ body{
       justify-content: space-between;
       background: #445162;
       padding: 50px;
-
 
       &__body {
             color: #fff;
@@ -31,7 +32,7 @@ body{
             margin: 40px 0px 0px 0px;
       }
 
-      &__link li{
+      &__link li {
             font-size: 20px;
             background: url(../img/icons/icon.png) no-repeat;
             padding: 0px 0px 0px 30px;
@@ -77,12 +78,10 @@ body{
 }
 
 .column {
-      background: #f5f5f5;
-
       &__body {
-            padding: 50px;
+            margin: 50px;
+            margin: 0 auto;
       }
-
 
       &__tittle {
             text-align: center;
@@ -90,21 +89,41 @@ body{
 
       &__group {
             display: flex;
+            flex-wrap: wrap;
+            margin: 5px 0px 0px 0px;
+            flex: 0 0 100%;
       }
 
-      &__block1 {
+      &__block1,
+      &__block2,
+      &__block3,
+      &__block4 {
+            width: 590px;
+            display: flex;
+            margin: 30px 0px 0px 0px;
       }
 
       &__img {
       }
 
+      &__cartoon {
+            max-width: 200px;
+      }
+
       &__textblock {
+            margin: 0px 0px 0px 15px;
       }
 
       &__subtittle {
+            font-size: 24px;
+            color: #445161;
       }
 
       &__text {
+            margin: 10px 0px 0px 0px;
+            padding: 0px 5px 0px 0px;
+            font-size: 16px;
+            line-height: 1.5;
       }
 
       &__block2 {
@@ -117,3 +136,80 @@ body{
       }
 }
 
+.vertikal {
+      margin: 50px 0px 0px 0px;
+      &__tittle {
+            text-align: center;
+      }
+
+      &__columnAbout {
+            display: flex;
+            justify-content: space-between;
+            margin: 29px 0px 0px 0px;
+            padding: 0px 80px 0px 80px;
+      }
+
+      &__column1,
+      &__column2,
+      &__column3 {
+            background: #445161;
+            width: 300px;
+            border: 1px solid #000;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+      }
+
+      &__name {
+            font-size: 24px;
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 18px 0px 12px 0px;
+      }
+
+      &__subtittle {
+            background: #fff;
+            text-transform: lowercase;
+            font-size: 40px;
+            color: #445161;
+            text-align: center;
+            padding: 25px 0px 19px 0px;
+            border: 3px solid #445161;
+      }
+
+      &__text {
+            color: #fff;
+            line-height: 1.5;
+            padding: 20px 29px 0px 20px;
+            text-align: left;
+            flex: 1 1 auto;
+      }
+
+      &__text p:last-child{
+            margin: 10px 0px 0px 0px;
+      }
+
+      &__button {
+            background: #fff;
+            border-radius: 5px;
+            text-align: center;
+            margin: 20px;
+            padding: 15px 0px 13px 0px;
+            font-size: 18px;
+      }
+
+      &__push {
+            color: #445161;
+            text-transform: lowercase;
+            font-size: 18px;
+      }
+
+      &__column2 {
+      }
+
+      &__column3 {
+      }
+}
+.tittle {
+}
